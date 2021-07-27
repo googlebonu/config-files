@@ -16,7 +16,7 @@
 # Note that /etc/zshenv is read before ~/.zshenv, and the /etc versions of other
 # files are similarly read before their dot files.
 #
-# This file was created by Sam King <sam@samking.org>.  Feel free to
+# This file was created by Sam King <sam@albertjam.org>.  Feel free to
 # modify, distribute, and enjoy it.  Also let me know if you discover any other
 # cool tricks -- ZSH is too huge for me to know everything about it.
 # If I got anything from your zshrc online and forgot to credit you, please let
@@ -45,7 +45,7 @@ zstyle ':completion:*' menu select=long
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
 zstyle ':completion:*' substitute 1
 # CUSTOMIZE(this_file)
-zstyle :compinstall filename '/home/samking/.zshrc'
+zstyle :compinstall filename '/home/albertjam/.zshrc'
 
 # insert all expansions for expand completer
 zstyle ':completion:*:expand:*' tag-order all-expansions
@@ -68,10 +68,10 @@ zstyle ':completion:*:*:-subscript-:*' tag-order indexes parameters
 # You can also use the users array to set the usernames for those hosts.
 # CUSTOMIZE(hosts)
 hosts=(myth.stanford.edu corn.stanford.edu xenon.stanford.edu \
-       codethechange.org samking.org practicalunix.org)
+       codethechange.org albertjam.org practicalunix.org)
 # CUSTOMIZE(username)
-users=(samking)
-#accounts=(samking)
+users=(albertjam)
+#accounts=(albertjam)
 #zstyle ':completion:*:processes' command 'ps -o pid,s,nice,stime,args'
 #zstyle ':completion:*:urls' local 'www' '/var/www/htdocs' 'public_html'
 #zstyle '*' accounts $accounts
@@ -147,9 +147,6 @@ unsetopt correct_all     # correct my bad spelling of all argument son a line
                          # argument that is similar to a file in the current
                          # directory (eg, sudo git would correct to .git)
 # CUSTOMIZE(keyboard_layout)
-setopt dvorak            # zsh knows that I use dvorak when correcting my typos
-                         # NOTE: if you use qwerty, just delete this line; there
-                         # is no "qwerty" option that needs to be set.
 setopt print_exit_value  # prints the exit value of commands when it's not 0
                          # (success); useful when writing shell scripts
 
@@ -322,7 +319,7 @@ preexec() {
 # Reset the prompt every minute so that the time in the prompt doesn't get too
 # far off.  We could have it tick every second, but that would be too
 # distracting.
-# TODO(samking): It might be possible to use ANSI escape codes and echo -e in
+# TODO(albertjam): It might be possible to use ANSI escape codes and echo -e in
 # preexec to do this more precisely, but I haven't been able to puzzle through
 # it yet.
 # http://stackoverflow.com/questions/13125825
@@ -552,7 +549,7 @@ fi
 # check out man zshbuiltins
 ################################################################################
 # If messages are enabled with mesg y, then other people can message you using,
-# for example, echo "Hey, Sam" | write samking would write "Hey, Sam" to my
+# for example, echo "Hey, Sam" | write albertjam would write "Hey, Sam" to my
 # screen.  This will work as a primitive chat feature.  However, it also messes
 # up your screen, so we disable it here.
 mesg n

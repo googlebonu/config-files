@@ -3,7 +3,7 @@
 # shells.  This is just for the enviornment variables that should be used for
 # both interactive and non-interactive shells.
 #
-# This file was created by Sam King <sam@samking.org>.  Feel free to
+# This file was created by Sam King <sam@albertjam.org>.  Feel free to
 # modify, distribute, and enjoy it.
 ################################################################################
 
